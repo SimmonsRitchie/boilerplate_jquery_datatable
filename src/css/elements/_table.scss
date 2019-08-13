@@ -1,0 +1,62 @@
+
+
+// styles for overall table
+#dataTable {
+  border-bottom: 1px solid $background-dark-accent;
+  margin-bottom: $s-size;
+  table-layout: fixed;
+  width: 100% !important; // important for responsiveness
+  font-size: $font-size-table;
+  color: $text-main;
+
+  // Ensures that far left header cell has rounded corner
+  th:first-child{
+    border-radius:10px 0 0 0px;
+  }
+
+  // Ensures that far right header cell has rounded corner
+  th:last-child{
+    border-radius:0 10px 0 0;
+  }
+
+  // General header style
+  th {
+    border-top: none;
+    color: #FADA81;
+    background-color: #21406F;
+    font-size: 1.1rem;
+  }
+
+  // important styling for responsiveness
+  td, th {
+    width: auto !important;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  // makes every other row a different color
+  tbody {
+    tr:nth-child(odd) {
+      background-color: $off-white;
+    }
+    tr:hover {
+      background-color: $table-hover;
+    }
+  }
+  
+  
+// Styles for pagination wrapper
+.dataTables_paginate {
+  font-size: $font-size-table;
+  margin-bottom: $s-size;
+}
+
+// Styles for 'showing x of x...' wrapper below table
+.dataTables_info {
+  font-size: $font-size-table;
+}
+  
+
+
+}

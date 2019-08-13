@@ -1,0 +1,45 @@
+{
+  "name": "horseinjuries",
+  "version": "1.0.0",
+  "description": "displays data on Pa. horse racing injuries",
+  "main": "./src/app.js",
+  "dependencies": {
+    "d3-fetch": "^1.1.2",
+    "jquery": "^3.4.0",
+    "jszip": "^3.2.1",
+    "moment": "^2.24.0",
+    "normalize.css": "^8.0.1",
+    "sentence-case": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.5.2",
+    "check-ecmascript-version-compatibility": "^0.1.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "es-check": "^5.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "dev-server": "webpack-dev-server --mode development",
+    "test-es5": "es-check es5 './public/dist/bundle.js'",
+    "test-es6": "es-check es6 './public/dist/bundle.js'"
+  },
+  "author": "DSR",
+  "license": "ISC"
+}

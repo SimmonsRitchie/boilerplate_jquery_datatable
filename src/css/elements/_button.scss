@@ -1,0 +1,12 @@
+.button__export {
+  margin: 0 0.2rem 0 0.2rem;
+  color: $text-main;
+  border-radius: 6px;
+  border: 1px solid $background-dark-accent;
+  
+  &:hover {
+    background-color: $table-hover;
+    // border-radius: 6px;
+  } 
+
+}
