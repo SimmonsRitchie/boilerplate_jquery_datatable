@@ -5,7 +5,7 @@
   "main": "./src/app.js",
   "dependencies": {
     "d3-fetch": "^1.1.2",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "jszip": "^3.2.1",
     "moment": "^2.24.0",
     "normalize.css": "^8.0.1",
